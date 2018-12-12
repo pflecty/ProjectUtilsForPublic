@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <!--图标按钮，顺序：倒序-->
+      <actionSet
+            label="Project Action Set"
+            visible="true"
+            id="ProjectUtilsForPublic.actionSet">
+            
+         <action
+               label="&amp;Project Action"
+               icon="icons/mapper.png"
+               class="projectutils.actions.JoinToSelectMapper"
+               tooltip="跳转到mybatis的Mapper映射文件"
+               toolbarPath="ProjectUtilsForPublicGroup"
+               id="projectutils.actions.JoinToSelectMapper">
+         </action>
+         <action
+               label="&amp;Project Action"
+               icon="icons/join_to_cur_controller.png"
+               class="projectutils.actions.JoinToSelectController"
+               tooltip="跳转到指定Controller"
+               toolbarPath="ProjectUtilsForPublicGroup"
+               id="projectutils.actions.JoinToSelectController">
+         </action>
+         <action
+               label="&amp;Project Action"
+               icon="icons/join_to_cur_service.png"
+               class="projectutils.actions.JoinToSelectService"
+               tooltip="跳转到指定Service"
+               toolbarPath="ProjectUtilsForPublicGroup"
+               id="projectutils.actions.JoinToSelectService">
+         </action>
+         <action
+               label="&amp;Project Action"
+               icon="icons/join_to_mode.png"
+               class="projectutils.actions.JoinToSelectMode"
+               tooltip="跳转到指定Mode"
+               toolbarPath="ProjectUtilsForPublicGroup"
+               id="projectutils.actions.JoinToSelectMode">
+         </action>
+         
+         <action
+               label="&amp;Project Action"
+               icon="icons/join_to_cur_view.png"
+               class="projectutils.actions.JoinToSelectView"
+               tooltip="跳转到指定Jsp"
+               toolbarPath="ProjectUtilsForPublicGroup"
+               id="projectutils.actions.JoinToSelectView">
+         </action>
+         
+         <action
+               label="&amp;Project Action"
+               icon="icons/copy-cur-edit-file-name.png"
+               class="projectutils.actions.CopyCurEditFileName"
+               tooltip="复制当前编辑文件名称"
+               toolbarPath="ProjectUtilsForPublicGroup"
+               id="projectutils.actions.CopyCurEditFileName">
+         </action>
+         
+         <action
+               label="&amp;Project Action"
+               icon="icons/controller.gif"
+               class="projectutils.actions.PositionControllerFolder"
+               tooltip="定位到控制类"
+               toolbarPath="ProjectUtilsForPublicGroup"
+               id="projectutils.actions.PositionControllerFolder">
+         </action>
+         
+         <action
+               label="&amp;Project Action"
+               icon="icons/views.png"
+               class="projectutils.actions.PositionViewsFolder"
+               tooltip="定位到Views"
+               toolbarPath="ProjectUtilsForPublicGroup"
+               id="projectutils.actions.PositionViewsFolder">
+         </action>
+         
+         <action
+               label="&amp;Project Action"
+               icon="icons/current-file.png"
+               class="projectutils.actions.PositionToCurFile"
+               tooltip="定位到编辑器当前文件"
+               toolbarPath="ProjectUtilsForPublicGroup"
+               id="projectutils.actions.PositionToCurFile">
+         </action>
+         
+      </actionSet>
+   </extension>
+
+</plugin>
